@@ -30,3 +30,7 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/osx
+
+_site
+.sass-cache
+.jekyll-metadata
