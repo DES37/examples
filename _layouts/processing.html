@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+
+            <article class="post">
+
+                <header class="post-header">
+                    <h1 class="post-title">{{ page.title }}</h1>
+                </header>
+
+                <div class="post-content">
+                    {{ content }}
+                </div>
+
+                <div style="text-align: center;">
+                    <canvas id="sketch" data-processing-sources="{{ page.sketch_path }}">Your browser doesn't support canvas</canvas>
+                </div>
+
+                <br> {% assign path_split = page.path | split: '/'' | pop %} {% assign sketch_path = path_split | join: '/' | prepend: '/' | append: '/' | append: page.sketch_path %}
+                <p style="text-align: center;"><a href="{{ site.baseurl | append: sketch_path }}" type="text/x-java-source">source</a> &nbsp;/&nbsp;
+                    <a href="http://www.explainjs.com/explain?src={{ site.url | append: site.baseurl | append: sketch_path }}">explain</a></p>
+
+                {% highlight java %}{% include_relative {{ page.sketch_path }} %}{% endhighlight %}
+
+            </article>
+
+        </div>
+    </main>
+
+    {% include footer.html %}
+
+    <script src='{{ site.baseurl }}/js/processing.min.js'></script>
+</body>
+
+</html>
