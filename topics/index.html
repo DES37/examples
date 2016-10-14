@@ -1,0 +1,23 @@
+---
+layout: default
+title: Examples
+navigation:
+ - title: Loops
+   url: loops
+---
+
+<div class="home">
+
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  <ul class="post-list">
+    {% for link in page.navigation %}
+      <li>
+
+        <h2>
+          <a class="post-link" href="{{ link.url }}">{{ link.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
