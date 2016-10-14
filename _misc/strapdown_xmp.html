@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Load external file into code element</title>
+
+    <link href="https://cdn.rawgit.com/google/code-prettify/master/styles/sunburst.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <textarea theme="cerulean" style="display:none;">
+This sketch:
+
+- Text section written in Markdown and processes with Strapdown.
+- Code section is pre/code and has external file loaded into it.
+- Choose Google code-prettify skin. Strapdown uses google code prettify.
+
+The official version (as of 0.2) will choke if you don't have exactly one `xmp` or `textarea` tag. And if you wish to apply a code-prettify style you should probably put your code in a div/pre/code section. Specify the `pre` as `prettyprint` and that class will be propagated to the `code` tag. Make the `div` a Strapdown `container` class and Strapdown will make sure it's nice and responsive and has good margins.
+</textarea>
+
+    <div class="container"><pre class="prettyprint"><code id="code"></code></pre></div>
+
+    <script type="text/javascript">
+        var req = new XMLHttpRequest();
+        req.onload = function () {
+            var xmpNode = document.getElementById('code');
+            xmpNode.appendChild(document.createTextNode(this.responseText));
+        }
+        req.open('GET', 'loops.pde', false);
+        req.send();
+    </script>
+    <script src="http://strapdownjs.com/v/0.2/strapdown.js">
+    </script>
+</body>
+
+</html>

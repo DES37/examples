@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Comprehensive Processing Example</title>
+
+    <style>
+        p.centered,
+        div.centered {
+            text-align: center;
+        }
+    </style>
+
+    <link href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/github-v2.min.css" rel="stylesheet" />
+    <script src="//cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+</head>
+
+<body>
+
+    <textarea theme="cerulean" style="display:none;">
+This template: - Uses Strapdown.js to render markdown into HTML, and use Bootstrap responsive styling. - Embeds a Processing.js sketch into a cavas element - Displays Processing code in a `<pre><dev>` block (use `XMLHttpRequest` to syncronously read in Processing code from an external file).
+
+Note: Processing.js could have problems loading code from a different domain.
+</textarea>
+
+    <br>
+    <div class="centered container">
+        <canvas id="sketch" data-processing-sources="loops.pde">Your browser doesn't support canvas</canvas>
+    </div>
+
+    <br>
+    <p class="centered"><a href="loops.pde" type="text/x-java-source">[source]</a></p>
+
+    <div class="container"><pre class="prettyprint"><code id="code"></code></pre></div>
+
+        <script type="text/javascript">
+            var req = new XMLHttpRequest();
+            req.onload = function () {
+                var xmpNode = document.getElementById('code');
+                xmpNode.appendChild(document.createTextNode(this.responseText));
+            }
+            req.open('GET', 'https://des37.github.io/spring2016/topics/loops/loops/loops.pde', false);
+            req.send();
+        </script>
+
+        <script src="//strapdownjs.com/v/0.2/strapdown.js"></script>
+
+</body>
+
+</html>

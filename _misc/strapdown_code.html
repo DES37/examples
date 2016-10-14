@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--SM derived from https://gist.github.com/bendavis78/236fb890ba23b10e66fc-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Load external file into Strapdown</title>
+</head>
+
+<body>
+
+    <div class='container'>
+        <p>This template loads code into a Strapdown markdown section.</p>
+
+        <p>This is a simple template for reading an external file into Strapdown.js xmp/textarea using XMLHttpRequest. It's a general synchrounous way to ready in external files (unlike jQuery load which is asynchrounous AJAX). I added backticks so that it is rendered as syntax highlighted code. Derived from this <a href="http://gist.github.com/bendavis78/236fb890ba23b10e66fc">gist</a>.</p>
+
+        <p>I added a head and body which the original didn't have. If you define a title then Strapdown will create the title bar. Hand coded divs etc should be given class='container' so that Bootstrap makes them nice.</p>
+    </div>
+
+    <xmp id="code" theme="cerulean" style="display:none;"></xmp>
+    <script type="text/javascript">
+        var req = new XMLHttpRequest();
+        req.onload = function () {
+            var xmpNode = document.getElementById('code');
+            xmpNode.appendChild(document.createTextNode('```\n' + this.responseText + '\n```'));
+        }
+        req.open('GET', 'http://des37.github.io/spring2016/topics/loops/loops/loops.pde', false);
+        req.send();
+    </script>
+    <script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</body>
+
+</html>
