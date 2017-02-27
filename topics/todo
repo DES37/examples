@@ -1,0 +1,32 @@
+topics that need examples:w
+
+easing
+
+
+fancy loops / for(i in X) or for(i:N) something like that
+
+video
+
+
+
+Animation
+=========
+
+
+change values in draw
+
+easing?
+
+testing bounds
+
+collision detection
+
+speed/direction, PVector?
+
+
+make examples for
+
+loadImage()
+
+loadShape()
+shape()
