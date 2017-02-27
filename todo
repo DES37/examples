@@ -1,0 +1,26 @@
+
+
+write sketch to verify that colorMode(HSB, 360, 100, 100) gives MAX values, so does that mean that there are 361 valid values? 1 to 360?
+
+check and example, even if using hsb setting stroke(h) give greyscale!? and is not equal to stroke(h, s, v)!!!!!
+
+how is hsb implemented in terms of color, to support what appears to be arbitrary maxima? aren't we constrained to 8 bit per channel?
+what is the default alpha range? verify how alpha works when using color variables, does it transfer over? it seems like stroke/fill must set alpha separately, can take single parameter hex rgb or color type. so that would mean the the alpha of a color variable (if set) is ignored by stroke/fill?
+ok, looking at https://processing.org/reference/colorMode_.html we are talking about ranges not max, but the discussion there says range of 0-360 so confusing! but in the same paragraph as colorMode(HSB, 360, 100, 100) talks about colorMode(RGB, 255, 255, 255), so what gives? color selector maxes out rgb at 255 and hsb at 359. seems like all discussions are a little unclear if they say to set a value to 100, does it just get clamped and so 100=99?
+
+
+
+note that map does not clamp/enforce ranges!!!
+
+
+document pushStyle/popStyle
+
+public void pushStyle()
+
+( begin auto-generated from pushStyle.xml ) The pushStyle() function saves the current style settings and popStyle() restores the prior settings. Note that these functions are always used together. They allow you to change the style settings and later return to what you had. When a new style is started with pushStyle(), it builds on the current style information. The pushStyle() and popStyle() functions can be embedded to provide more control (see the second example above for a demonstration.)
+
+The style information controlled by the following functions are included in the style: fill(), stroke(), tint(), strokeWeight(), strokeCap(), strokeJoin(), imageMode(), rectMode(), ellipseMode(), shapeMode(), colorMode(), textAlign(), textFont(), textMode(), textSize(), textLeading(), emissive(), specular(), shininess(), ambient() ( end auto-generated )
+
+public void popStyle()
+
+( begin auto-generated from popStyle.xml ) The pushStyle() function saves the current style settings and popStyle() restores the prior settings; these functions are always used together. They allow you to change the style settings and later return to what you had. When a new style is started with pushStyle(), it builds on the current style information. The pushStyle() and popStyle() functions can be embedded to provide more control (see the second example above for a demonstration.) ( end auto-generated )
