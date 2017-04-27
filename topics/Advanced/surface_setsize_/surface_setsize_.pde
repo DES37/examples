@@ -1,3 +1,8 @@
+/*
+ *
+ * Spencer Mathews
+ */
+
 void setup() {
   size(400, 400);
   surface.setResizable(true);

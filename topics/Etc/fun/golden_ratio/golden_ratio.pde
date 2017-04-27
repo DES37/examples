@@ -1,7 +1,7 @@
-/* SM, May 2016
- * Playing with the Golden Ratio
+/* Playing with the Golden Ratio
  *
- * 
+ * author: Spencer Mathews
+ * date: 5/2016
  */
 
 float phi = (1+sqrt(5))/2;  // 1.618033988749894848204586834365638117720

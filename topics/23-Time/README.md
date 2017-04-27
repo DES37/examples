@@ -2,4 +2,6 @@
 
 ##### Syntax Introduced:
 
-```second(), minute(), hour(), millis(), day(), month(), year()```
+```second(), minute(), hour(), millis(), day(), month(), year()```## Examples
+
+TODO basic example and time animations (perhaps that goes elsewhere)

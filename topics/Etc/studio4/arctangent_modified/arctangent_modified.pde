@@ -1,8 +1,12 @@
-/* Spencer Mathews, October 2016
+/* 
  *
- * IS FINISHED!
  * Adaptation of https://processing.org/examples/arctangent.html
  * which removes the class to simplify the example
+ *
+ * Spencer Mathews, October 2016
+ * Status:complete
+ *
+ * #studio4
  */
 
 void setup() {

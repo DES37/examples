@@ -1,8 +1,6 @@
-/*
-Spencer Mathews
-10/2015
-
-Illustrate defaults by giving them explicitly
+/* Illustrate defaults by giving them explicitly
+ * author: Spencer Mathews
+ * date: 10/2015
 */
 
 color c;

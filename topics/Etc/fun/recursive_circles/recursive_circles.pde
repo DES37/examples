@@ -1,6 +1,8 @@
-// SM
-// April 2016
-// Recursively construct circles
+/* Recursively construct circles
+ *
+ * author:Spencer Mathews
+ * date: 4/2016
+ */ 
 
 float minRadius;
 

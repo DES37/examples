@@ -1,12 +1,12 @@
-/* Spencer Mathews, October 2016
- *
- * Following mouse using several techniques
+/* Following mouse using several techniques
  * 
  * More math is required to enforce precise circular bounds.
  * Some methods are only approximate.
  * Not all properly handle when mouse is within range.
- * 
- * #mouse #math
+ *
+ * Spencer Mathews, October 2016
+ *
+ * #mouse #math #studio4
  */
 
 void setup() {

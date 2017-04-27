@@ -1,6 +1,7 @@
-// Spencer Mathews, April 2016
-// Demonstrate primitive shapes
-// #shapes
+/* Spencer Mathews, April 2016
+ * Demonstrate primitive shapes
+ * #shapes
+ */
 
 void setup() {
   size(500, 500);

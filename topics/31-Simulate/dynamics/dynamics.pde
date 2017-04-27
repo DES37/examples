@@ -1,6 +1,10 @@
-
-// http://www.algosome.com/articles/lorenz-attractor-programming-code.html
-// http://introcs.cs.princeton.edu/java/94diffeq/
+/*
+ *
+ * References:
+ * http://www.algosome.com/articles/lorenz-attractor-programming-code.html
+ * http://introcs.cs.princeton.edu/java/94diffeq/
+ *
+ */
 
 Lorenz l = new Lorenz();
 

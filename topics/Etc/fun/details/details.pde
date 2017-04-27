@@ -1,8 +1,10 @@
-/* SM, May 2016
- * Playing with precise dimensions of width and height
+/* Playing with precise dimensions of width and height
  *
- * The upper-left pixel is  (0,0) and lower-right is (width-1, height-1)
- * 
+ * The upper-left pixel is (0,0) and lower-right is (width-1, height-1)
+ *
+ * author: Spencer Mathews
+ * date: 5/2016
+ * status: incomplete
  */
 
 int selection = 0;

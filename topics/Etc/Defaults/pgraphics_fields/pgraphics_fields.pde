@@ -1,8 +1,5 @@
-/* Spencer Mathews, 11/2016
+/* Default values of PGraphics fields
  *
- * Default values of PGraphics fields
- *
-
  * PApplet is `this` associated PGraphics object is `this.g`
  * PGraphics is a subclass of PImage
  * PGraphics http://processing.github.io/processing-javadocs/core/processing/core/PGraphics.html
@@ -12,6 +9,8 @@
  * |-PGraphicsGL
  * | |-PGraphics2D
  * | |-PGraphics3D
+ *
+ * author: Spencer Mathews, 11/2016
  */
 
 void setup() {

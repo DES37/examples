@@ -12,3 +12,8 @@ keyPressed(), keyReleased()
 loop(), redraw()
 noCursor(), cursor()
 ```
+
+## Examples
+
+
+

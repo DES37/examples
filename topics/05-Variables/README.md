@@ -13,3 +13,9 @@ boolean(), byte(), char(), float(), int(), str()
 ++ (increment), -- (decrement), += (add assign), −= (subtract 
 assign) *= (multiply assign), /= (divide assign), – (negation)
 ```
+
+## Examples
+
+TODO make sure examples with color variables illustrate where alpha is carried or not
+
+TODO casting and conversion, see web examples

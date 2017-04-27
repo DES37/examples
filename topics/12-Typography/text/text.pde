@@ -1,10 +1,11 @@
-/* SM, May 2016
- * Using text in Processing
+/* Using text in Processing
  *
- * 
+ * reference: http://processing.github.io/processing-javadocs/core/processing/core/PGraphics.html
+ *
+ * author: SM
+ * date: 5/2016
+ * status: incomplete
  */
-
-  // see http://processing.github.io/processing-javadocs/core/processing/core/PGraphics.html
 
 void setup() {
   noLoop();

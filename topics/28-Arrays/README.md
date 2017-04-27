@@ -1,9 +1,9 @@
-# 29 Animation
-
->This chapter introduces techniques for displaying sequences of images successively, creating animation.
-
-##### Syntax introduced:
-
+# 28 Arrays
+>This chapter introduces arrays of data.
+##### Syntax introduced:```Array, [] (array access), Array.length, printArray()
+append(), shorten(), expand(), arrayCopy()
 ```
-save(), saveFrame()
-``
+
+## Examples
+
+

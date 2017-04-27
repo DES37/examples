@@ -7,3 +7,9 @@
 ```
 blendMode(), colorMode()
 ```
+
+## Examples
+
+## See Also
+
+* [Ch 5: Variables](../05-Variables) for the `color` data type and `color()` function
