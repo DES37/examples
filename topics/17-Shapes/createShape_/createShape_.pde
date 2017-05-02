@@ -1,8 +1,10 @@
-/* Spencer Mathews
- *
- * finish!
- *
+/*
  * best practice is to createShape about the origin and translate
+ *
+ * ref: https://processing.org/tutorials/pshape/
+ *
+ * author: Spencer Mathews
+ * status: incomplete
  */
 
 PShape vertexShape;
@@ -17,11 +19,7 @@ PShape lineShape;
 //PShape sphereShape;
 //PShape boxShape;
 
-PShape groupShape;!
-
-
-
-
+PShape groupShape;
 
 void setup() {
   size(500, 500);

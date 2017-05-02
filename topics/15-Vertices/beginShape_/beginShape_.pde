@@ -1,28 +1,25 @@
-/* Spencer Mathews
+/*
+ * beginShape() creates irregular polygon with no mode parameter, or specity
+ * POINTS, LINES, TRIANGLES, TRIANGLE_FAN, TRIANGLE_STRIP, QUADS, QUAD_STRIP
  *
- * finish!
+ * ref: https://processing.org/tutorials/pshape/
  *
- * see https://processing.org/tutorials/pshape/
+ * author: Spencer Mathews
+ * status: incomplete
+ * tags: #beginShape
  */
-
-
-
-PShape rectangle;
 
 PVector center;
 
 void setup() {
   size(500, 500, P2D);
   center = new PVector(width/2, height/2);
-
-  // note: createShape
-  rectangle = createShape(RECT, 0, 0, 100, 50);
 }
 
 void draw() {
   background(0);
 
-    // draw basic shape
+  // draw basic shape
   beginShape();
   vertex(0, 0);
   vertex(width/2, 0);
