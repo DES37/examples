@@ -12,3 +12,12 @@ noStroke()
 smooth(), noSmooth()
 strokeWeight(), strokeCap(), strokeJoin()
 ellipseMode(), rectMode()
+```
+
+## See Also
+
+* [Ch 15: Vertices](../15-Vertices/)
+
+## Etc
+
+Strangely `curve()` is not covered in this chapter, or anywhere in the Handbook for that mater.

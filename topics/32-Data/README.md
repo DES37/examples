@@ -15,3 +15,13 @@ JSONArray, loadJSONArray(), JSONArray.size()
 JSONObject, JSONArray.getJSONObject(), JSONObject.getString(),
 JSONObject.getInt(), JSONObject.getFloat()
 ```
+
+## Etc
+
+Use `sketchPath()` to get path to sketch.
+
+Java `File` object
+
+`listPaths()`
+
+`listFiles()`

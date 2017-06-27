@@ -11,3 +11,8 @@ void, return
 ## Examples
 
 TODO recursion
+
+
+## Etc
+
+*Varargs* allows either an array or sequence of arguments (of arbitrary length). Indicate with three periods (ellipsis) after final parameter's type (only works in final argument position).

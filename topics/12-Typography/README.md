@@ -2,4 +2,6 @@
 
 ##### Syntax Introduced:
 
-```text(), textSize()createFont(), textFont(), PFont, loadFont()textLeading(), textAlign(), textWidth()```
+```processingtext(), textSize()createFont(), textFont(), PFont, loadFont()textLeading(), textAlign(), textWidth()```## Examples
+
+TODO alignment etc examples
