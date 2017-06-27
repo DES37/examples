@@ -1,4 +1,6 @@
-
+topics:
+triangulations
+particle systems
 
 write sketch to verify that colorMode(HSB, 360, 100, 100) gives MAX values, so does that mean that there are 361 valid values? 1 to 360?
 
@@ -24,3 +26,45 @@ The style information controlled by the following functions are included in the 
 public void popStyle()
 
 ( begin auto-generated from popStyle.xml ) The pushStyle() function saves the current style settings and popStyle() restores the prior settings; these functions are always used together. They allow you to change the style settings and later return to what you had. When a new style is started with pushStyle(), it builds on the current style information. The pushStyle() and popStyle() functions can be embedded to provide more control (see the second example above for a demonstration.) ( end auto-generated )
+
+---
+
+topics that need examples:w
+
+easing
+
+
+fancy loops / for(i in X) or for(i:N) something like that
+
+video
+
+
+
+Animation
+=========
+
+
+change values in draw
+
+easing?
+
+testing bounds
+
+collision detection
+
+speed/direction, PVector?
+
+
+make examples for
+
+loadImage()
+
+loadShape()
+shape()
+
+---
+
+find that paint splash sketch from previous student, and filter out other good student work
+
+ch8 make example using millis for animation
+
