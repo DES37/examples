@@ -1,5 +1,6 @@
-// Spencer Mathews, May 2016
-// Simple mouse interaction which follows mouse position.
+/* Simple mouse interaction which follows mouse position.
+ * Spencer Mathews, May 2016
+ */
 
 void setup() {
   size(500, 500);

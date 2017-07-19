@@ -4,6 +4,9 @@
  *
  * ref: https://processing.org/tutorials/pshape/
  *
+ * note: If you don't specify mode and only put two vertex in beginShape
+ *       JAVA2D and FX2D will still render line, but P2D and P3D will not! Bug?
+ *
  * author: Spencer Mathews
  * status: incomplete
  * tags: #beginShape

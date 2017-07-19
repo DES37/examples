@@ -1,5 +1,7 @@
 /* Recursively construct circles
  *
+ * note unintended similarity to Handbook example 24-31
+ *
  * author:Spencer Mathews
  * date: 4/2016
  */ 

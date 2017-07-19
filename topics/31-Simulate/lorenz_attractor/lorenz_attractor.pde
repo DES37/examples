@@ -1,4 +1,10 @@
-// Lorenze System// chaotic system
+/* Lorenze System// chaotic system
+ *
+ * I think this is mine?
+ * status: incomplete
+ */
+
+// 
 
 // known inputs but not deterministic behavior
 float a = 10, b = 28, c = 8/3; 

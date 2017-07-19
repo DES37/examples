@@ -1,6 +1,9 @@
-// Spencer Mathews, April 2016
-// Demonstrate nested for loops
-// #loops
+/* Demonstrate nested for loops
+ *
+ * author: Spencer Mathews
+ * date: 4/2016
+ * tags: #loops
+ */
 
 void setup() {
   size(500, 500);
@@ -10,15 +13,16 @@ void setup() {
 void draw() {
   background(0);
 
-  float s = 10;
   float dx = 10;
   float dy = 10;
+  float w = dx;
+  float h = dy;
 
   for (float x=0; x<height; x+=dx)
   {
     for (float y=0; y<height; y+=dy)
     {
-      rect(x, y, s, s);
+      rect(x, y, w, h);
     }
   }
 }

@@ -1,5 +1,7 @@
-// Spencer Mathews, May 2016
-// Simple mouse interaction which follows mouse position.
+/* Simple mouse interaction which follows mouse position.
+ *
+ * Spencer Mathews, May 2016
+ */
 
 float w, h;
 
@@ -16,29 +18,25 @@ void draw() {
   //float w = width/zoom;
   //float h = height/zoom;
 
-  drawBox(width/2, height/2);
-  
+  float x = width/2;
+  float y = height/2;
 
-}
-
-void drawBox(float x, float y) {
- 
   float dy, dx;
   float offset = 5;
-  
+
   rect(x, y, w, h);
-  
-  if(mouseX<x) {
+
+  if (mouseX<x) {
     dx = -offset;
   } else {
     dx = offset;
   }
-  
-  if(mouseY<y) {
+
+  if (mouseY<y) {
     dy = -offset;
   } else {
     dy = offset;
   }
-  
+
   rect(x, y, x+dx, y+dy);
 }

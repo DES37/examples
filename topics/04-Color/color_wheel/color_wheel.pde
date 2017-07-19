@@ -29,6 +29,5 @@ void draw() {
   noFill();
   ellipse(0, 0, width, height);
   
-  // frame.setTitle->surface.setTitle in P3
   surface.setTitle(int(frameRate) + " fps");
 }

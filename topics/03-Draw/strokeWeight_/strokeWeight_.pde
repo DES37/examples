@@ -1,31 +1,42 @@
-/* SM, May 2016
- * Investigating stokeWeight
+/* Using stokeWeight()
  *
- * 
- * 
- * Note: Renderers handle stroke differently and some don't allow zero weight 
+ * mouseX ~ strokeWeight
+ * mouseY ~ 
+ *
+ * note: Renderers handle stroke differently and some don't allow zero weight
+ *
+ * author: Spencer Mathews
+ * date: 5/2017
  */
 
+TODO think about
+
 void setup() {
-  size(500,500);
+  size(500, 200);
+  //noLoop();
 }
 
 void draw() {
-  background(128);
-  stroke(255,0,0);
-  fill(0,0,255);
-  strokeWeight(mouseX);
-  ellipse(width/2, height/2, mouseY, mouseY);
-  strokeWeight(3);
-  stroke(0);
-  ellipse(width/2, height/2, mouseY, mouseY);
-  line(width/2+mouseY/2,height/2, width/2+mouseY/2+mouseX/2, height/2);
-  println(mouseY/(mouseX+.000001));
+  background(255);
+  stroke(0, 64);
   
-  strokeWeight(mouseX);
-  line(width/2, 0, width/2, height);
+
+  float x = 0, px = 0, y = 0;
+  float weight = .1;
+
+  // loose condition
+  while (x<width) {
+    strokeWeight(weight);
+    line(px, height/2, x, height/2);
+    //line(px, y, x, y);
+
+    weight *= 1.5;
+    px = x;
+    //x += weight;
+    x += 50;
+    //y += 10;
+  }
   
-  int tx = 0;
-  int ty = 0;
-  text("Hello",tx, ty);
+  //weight = height;
+  //while (weight> 1
 }

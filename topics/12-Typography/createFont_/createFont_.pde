@@ -1,5 +1,10 @@
-// prefer createFont ( vector fonts TTF/OTF) over loadFont (VLW)!
-// !!! write code to view all the fonts!
+/* Example of createFont()
+ *
+ * note: prefer createFont (vector fonts TTF/OTF) over loadFont (VLW)!
+ * TODO write code to view all the fonts!
+ *
+ * author: Spencer Mathews
+ */
 
 
 // list fonts available on system

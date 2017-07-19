@@ -1,10 +1,13 @@
-/* Spencer Mathews
+/* Demonstrate use of strokeCap()
  *
- * Demonstrate use of strokeCap
+ * mouseX ~ strokeWeight
+ *
+ * Default strokeCap seems to be ROUND
+ *
+ * reference: https://processing.org/reference/strokeCap_.html
+ * 
+ * author: Spencer Mathews
  */
-
-// correct docs! default seems to be project! they are wrong!
-//https://processing.org/reference/strokeCap_.html
 
 void setup() {
   size(500, 500);
@@ -12,28 +15,32 @@ void setup() {
 
 void draw() {
   background(0);
+  
+  float x1 = 100;
+  float x2 = 400;
 
-  stroke(255);
-  strokeWeight(50);
+  stroke(255, 255, 255);
+  strokeWeight(mouseX);
 
-  line(100, 100, 400, 100);
+  line(x1, 100, x2, 100);
 
   strokeCap(ROUND);
-  line(100, 200, 400, 200);
+  line(x1, 200, x2, 200);
 
   strokeCap(SQUARE);
-  line(100, 300, 400, 300);
+  line(x1, 300, x2, 300);
 
   strokeCap(PROJECT);
-  line(100, 400, 400, 400);
-
-  // example from https://processing.org/reference/strokeCap_.html
-  //strokeWeight(12.0);
-  //line(20, 10, 80, 10);
-  //strokeCap(ROUND);
-  //line(20, 30, 80, 30);
-  //strokeCap(SQUARE);
-  //line(20, 50, 80, 50);
-  //strokeCap(PROJECT);
-  //line(20, 70, 80, 70);
+  line(x1, 400, x2, 400);
+  
+  stroke(255, 0, 0, 128);
+  strokeWeight(1);
+  // vertical lines to mark line ends
+  line(x1, 0, x1, height);
+  line(x2, 0, x2, height);
+  // vertical lines 
+  line(x1-mouseX/2, 0, x1-mouseX/2, height);
+  line(x2+mouseX/2, 0, x2+mouseX/2, height);
+  line(0, 100+mouseX/2, width, 100+mouseX/2);
+  line(0, 100-mouseX/2, width, 100-mouseX/2);
 }

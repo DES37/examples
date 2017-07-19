@@ -1,7 +1,11 @@
-// Spencer Mathews, April 2016
-// Demonstrate the color data type
-// colors are 32 bits of information ordered as AAAAAAAARRRRRRRRGGGGGGGGBBBBBBBB
-// #color
+/* Demonstrate the color data type
+ *
+ * colors are 32 bits of information ordered as AAAAAAAARRRRRRRRGGGGGGGGBBBBBBBB
+ *
+ * Spencer Mathews, April 2016
+ 
+ * #color
+ */
 
 void setup() {
   size(400, 400);

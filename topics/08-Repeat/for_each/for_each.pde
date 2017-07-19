@@ -1,13 +1,12 @@
-/* Spencer Mathews
+/* Illustrate use of "enhanced for loop" (for-each Java 5+)
  *
- * Illustrate use of "enhanced for loop" (for-each Java 5+)
+ * reference: https://processing.org/reference/for.html
  *
- * from: https://processing.org/reference/for.html
+ * note: it's not clear that this is actually covered in Reas/Fry
  *
- * #loops #for
+ * author: Spencer Mathews
+ * tags: #loops #for
  */
-
-
 
 int[] nums = { 5, 4, 3, 2, 1 };
 

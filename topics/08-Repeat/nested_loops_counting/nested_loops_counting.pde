@@ -1,6 +1,9 @@
-// Spencer Mathews, April 2016
-// Demonstrate nested for loops which increment by one.
-// #loops
+/* Demonstrate nested for loops which increment by one
+ *
+ * author: Spencer Mathews
+ * date: 4/2016
+ * tags: #loops
+ */
 
 void setup() {
   size(500, 500);
